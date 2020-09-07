@@ -7,7 +7,6 @@ function resolveSrc (_path) {
 // vue.config.js
 module.exports = {
   lintOnSave: true,
-  sourceMap: true,
   productionSourceMap: false,
   configureWebpack: {
     // Set up all the aliases we use in our app.
@@ -18,7 +17,7 @@ module.exports = {
     },
     module: {
       rules: [
-        ...{
+        {
           test: /\.vue$/,
           loader: 'vue-loader'
         },
